@@ -7,11 +7,12 @@ import 'package:kot/community/presentation/pages/map_screen.dart';
 import 'package:kot/community/presentation/widgets/customTextFormField.dart';
 import 'package:kot/core/network/api_provider.dart';
 import 'package:kot/custom_color.dart';
-import 'package:kot/deals/presentation/widgets/custom_button.dart';
+
 import 'package:kot/my_routes.dart';
 import 'package:kot/toastHelper.dart';
 
 import '../../../boat_booking/presentation/widgets/custom_buttons.dart';
+import '../../../deals_new/widgets/custom_button.dart';
 
 class CreateGroup extends StatefulWidget {
   const CreateGroup({super.key});

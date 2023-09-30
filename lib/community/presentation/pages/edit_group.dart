@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:kot/custom_color.dart';
-import 'package:kot/deals/presentation/widgets/custom_button.dart';
+
+import 'package:kot/deals_new/widgets/custom_button.dart';
 import 'package:kot/my_routes.dart';
 import 'package:kot/toastHelper.dart';
 import '../../../boat_booking/presentation/widgets/custom_buttons.dart';

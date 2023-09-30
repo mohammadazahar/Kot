@@ -6,7 +6,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 
 import 'package:kot/custom_color.dart';
-import 'package:kot/deals/presentation/widgets/custom_button.dart';
+import 'package:kot/deals_new/widgets/custom_button.dart';
 import 'package:kot/my_routes.dart';
 import 'package:kot/profiles/presentation/bloc/profile_bloc.dart';
 import 'package:kot/profiles/presentation/bloc/profile_state.dart';
@@ -46,6 +46,7 @@ class _UserProfileState extends State<UserProfile> {
       });
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -166,24 +167,29 @@ class _UserProfileState extends State<UserProfile> {
                             children: [
                               CircleAvatar(
                                 radius: 50, // Adjust the radius as needed
-                                backgroundColor: Colors.transparent, // Add this line to make the background transparent
+                                backgroundColor: Colors
+                                    .transparent, // Add this line to make the background transparent
                                 child: ClipOval(
                                   child: SizedBox(
                                     width: 100,
                                     height: 100,
                                     child: _imageFile != null
-                                        ? Image.file(_imageFile!, fit: BoxFit.cover)
+                                        ? Image.file(_imageFile!,
+                                            fit: BoxFit.cover)
                                         : Image.asset(
-                                      "assets/images/img_profile14.png",
-                                      fit: BoxFit.cover,
-                                    ),
+                                            "assets/images/img_profile14.png",
+                                            fit: BoxFit.cover,
+                                          ),
                                   ),
                                 ),
                               ),
-
-                              GestureDetector( onTap: () {
-                             _pickImage();
-                              } ,child: const Icon(Icons.camera_alt_outlined,))
+                              GestureDetector(
+                                  onTap: () {
+                                    _pickImage();
+                                  },
+                                  child: const Icon(
+                                    Icons.camera_alt_outlined,
+                                  ))
                             ],
                           ),
                           const SizedBox(
@@ -405,7 +411,7 @@ class _UserProfileState extends State<UserProfile> {
                                   zip: _groupZipCodeController.text,
                                   city: _groupCityController.text,
                                   photo: _imageFile!.path,
-                                      // "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+                                  // "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
                                   interests: "${[
                                     "64e46514f2df61197c765389",
                                     "64e464c3f78397034ee426ba",

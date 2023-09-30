@@ -8,6 +8,7 @@ import 'package:kot/custom_color.dart';
 import 'package:kot/dashboard/map.dart';
 import 'package:kot/dashboard/message.dart';
 import 'package:kot/deals/presentation/pages/deals.dart';
+import 'package:kot/deals_new/deals.dart';
 import 'package:kot/nav/nav_bar_bloc.dart';
 import 'package:kot/toastHelper.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
@@ -131,7 +132,7 @@ class _NavBarState extends State<NavBar> {
                     CommunityScreen(),
                   ],
                 ),
-                DealsScreen(),
+                DealScreen(),
               ],
             );
           },

@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:kot/boat_booking/presentation/widgets/search_widget.dart';
 import 'package:kot/custom_color.dart';
-import 'package:kot/deals/presentation/widgets/custom_button.dart';
+import 'package:kot/deals_new/widgets/custom_button.dart';
 import 'package:kot/my_routes.dart';
 import 'package:kot/post/controllers/post_controller.dart';
 import 'package:kot/post/view/add_post.dart';

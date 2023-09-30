@@ -33,6 +33,11 @@ import 'package:kot/deals/presentation/pages/deals_thanks_scren_deals.dart';
 import 'package:kot/deals/presentation/pages/oders_detailed.dart';
 import 'package:kot/deals/presentation/pages/order_history.dart';
 import 'package:kot/deals/presentation/pages/product_details.dart';
+import 'package:kot/deals_new/components/cart_page.dart';
+import 'package:kot/deals_new/components/checkout.dart';
+import 'package:kot/deals_new/components/oders_detailed.dart';
+import 'package:kot/deals_new/components/order_history.dart';
+import 'package:kot/deals_new/deals.dart';
 import 'package:kot/fish_catch/fish_catch_dialog1.dart';
 import 'package:kot/fish_catch/fish_catch_edit_dialog.dart';
 import 'package:kot/fish_catch/image_dialog.dart';
@@ -403,7 +408,7 @@ class MyRouters {
       case DEALS:
         return MaterialPageRoute(
           builder: (context) {
-            return DealsScreen();
+            return DealScreen();
           },
         );
       case MAP:
@@ -537,14 +542,14 @@ class MyRouters {
 
       case SPLASH:
         return MaterialPageRoute(builder: (context) {
-          return const SplashScreen();
+          return DealScreen();
         });
 
       default:
         return MaterialPageRoute(
             settings: RouteSettings(name: SPLASH),
             builder: (context) {
-              return SplashScreen();
+              return DealScreen();
             });
     }
   }

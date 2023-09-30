@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kot/boat_booking/presentation/pages/activity_selection.dart';
 import 'package:kot/dashboard/map.dart';
 import 'package:kot/deals/presentation/pages/deals.dart';
+import 'package:kot/deals_new/deals.dart';
 
 import '../community/presentation/pages/communtity_screen.dart';
 import '../my_routes.dart';
@@ -88,7 +89,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     const MessageScreen(),
     const MapScreen(),
     const ActivitySelection(),
-    const DealsScreen()
+    DealScreen()
   ];
   @override
   Widget build(BuildContext context) {

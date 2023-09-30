@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kot/deals/presentation/widgets/custom_button.dart';
+import 'package:kot/deals_new/widgets/custom_button.dart';
 
 class ThankYouScreen extends StatelessWidget {
   const ThankYouScreen({

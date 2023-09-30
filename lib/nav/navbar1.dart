@@ -4,6 +4,7 @@ import 'package:kot/community/presentation/pages/communtity_screen.dart';
 import 'package:kot/dashboard/map.dart';
 import 'package:kot/dashboard/message.dart';
 import 'package:kot/deals/presentation/pages/deals.dart';
+import 'package:kot/deals_new/deals.dart';
 import 'package:kot/my_routes.dart';
 import 'package:kot/toastHelper.dart';
 
@@ -110,8 +111,7 @@ class _NavScreen1State extends State<NavScreen1> {
                   child: GestureDetector(
                     onTap: () {
                       // Close the dialog
-                      Navigator.pushNamed(
-                          context, MyRouters.addPostScreen);
+                      Navigator.pushNamed(context, MyRouters.addPostScreen);
                       // Show a dialog when the "Post" button is tapped
                       showDialog(
                         context: context,
@@ -246,7 +246,7 @@ class _NavScreen1State extends State<NavScreen1> {
           ),
         ],
       ),
-      const DealsScreen(),
+      DealScreen(),
     ];
 
     return Scaffold(

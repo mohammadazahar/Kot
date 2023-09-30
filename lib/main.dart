@@ -3,8 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:kot/core/util/shared_preference_call.dart';
-import 'package:kot/deals/data/repository/cateogry_repo.dart';
-import 'package:kot/deals/presentation/bloc/category/category_bloc.dart';
+import 'package:kot/core/utils/initial_bindings.dart';
 import 'package:kot/fish_catch/bloc/fish_catch/add_fish_catch_bloc.dart';
 import 'package:kot/fish_catch/bloc/interest_bloc.dart';
 import 'package:kot/fish_catch/repository/add_fish_catch_repo.dart';
@@ -13,7 +12,6 @@ import 'package:kot/my_routes.dart';
 import 'package:kot/profiles/data/repository/profile_repo.dart';
 import 'package:kot/profiles/presentation/bloc/profile_bloc.dart';
 import 'package:sizer/sizer.dart';
-
 import 'custom_color.dart';
 
 RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
@@ -38,7 +36,7 @@ class MyApp extends StatelessWidget {
     return Sizer(builder: (context, orientation, deviceType) {
       return MultiBlocProvider(
         providers: [
-          BlocProvider(create: (context) => CategoryBloc(CategoryRepository())),
+          // BlocProvider(create: (context) => CategoryBloc(CategoryRepository())),
           BlocProvider(create: (context) => ProfileBloc(ProfileRepository())),
           BlocProvider(create: (context) => InterestBloc(InterestRepository())),
           BlocProvider(
@@ -62,6 +60,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           onGenerateRoute: MyRouters.generateRoute,
           navigatorObservers: [routeObserver],
+          initialBinding: AppBindings(),
           //    initialRoute: MyRouters.SPLASH,
         ),
       );
